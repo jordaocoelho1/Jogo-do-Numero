@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acerte Meu Número</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="player1">
+      <h2>Jogador 1</h2>
+      <label for="numberInput1">Escolha seu Número:</label>
+      <input type="text" id="numberInput1" maxlength="4" />
+      <button onclick="startGame()">Confirmar Número</button>
+    </div>
+
+    <div id="player2">
+      <h2>Jogador 2</h2>
+      <label for="numberInput2">Escolha seu Número:</label>
+      <input type="text" id="numberInput2" maxlength="4" />
+      <button onclick="startGame()">Confirmar Número</button>
+    </div>
+
+    <div id="gameArea" style="display: none">
+      <h2>Rodada Atual</h2>
+      <div id="currentPlayer"></div>
+      <label for="guessInput">Faça sua Adivinhação:</label>
+      <input type="text" id="guessInput" maxlength="4" />
+      <button onclick="makeGuess()">Adivinhar</button>
+      <div id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
